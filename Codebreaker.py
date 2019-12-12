@@ -1,7 +1,6 @@
 import pygame
 from random import randint
 
-
 pygame.init()
 
 screen = pygame.display.set_mode((753, 678))
@@ -23,13 +22,10 @@ barr=pygame.image.load('bar.png')
 music = pygame.mixer.music.load('music.mp3')
 pygame.mixer.music.play(-1)
 
-
-
 screen.blit(bg,(0,0))
 screen.blit(bgsec,(513,0))
 
 pygame.draw.rect(screen,(0,0,0),(453,0,60,680))
-
 pygame.draw.rect(screen,(255,255,255),(293,0,2,680))
 
 x = 10
@@ -62,16 +58,9 @@ arc[1] = int(con[1])
 arc[2] = int(con[2])
 arc[3] = int(con[3])
 
-
-
-
 print(arc)
 
-
-
-
-
-def printinpu():
+ef printinpu():
     global inputuser
     global arc
     global counter
@@ -130,8 +119,6 @@ def printinpu():
             print("O")
             screen.blit(circ, (421, 15 + 80 * inpucolu - 80))
 
-
-
 def showinpu():
     global arrowcounter
     global inputcounter
@@ -147,28 +134,19 @@ def showinpu():
         inputuser[inputcounter] = numcounter
         inputcounter = inputcounter + 1
 
-
         printinpu()
     elif inputcounter > 3 and counter != arrowcounter:
         print("Wrong step")
         if not counter==23:
             screen.blit(prin[2],(515,160))
-
-
-
+            
     else:
         inputuser[inputcounter]=numcounter
         inputcounter=inputcounter+1
         printinpu()
 
-
-
 def drawnumber():
     screen.blit(barr,(453,23))
-
-
-
-
 
 def check():
     global numcounter
@@ -177,8 +155,6 @@ def check():
         screen.blit(prin[3],(513,0))
     else:
         screen.blit(bgsec,(513,0))
-
-
 
     print ("break")
 
@@ -219,8 +195,6 @@ def check():
             print("nothing between")
         showinpu()
 
-
-
 def arrowf():
     x1, y1 = pygame.mouse.get_pos()
     print(x1,y1)
@@ -230,9 +204,6 @@ def arrowf():
         if y1 >= 15 and y1 < 45 and counter == 0:
             counter = 1
             screen.blit(bgsec, (513, 0))
-
-
-
 
         elif y1 >= 96 and y1 < 126 and counter == 1:
             counter = 2
@@ -270,9 +241,6 @@ def arrowf():
 pygame.display.update()
 run = True
 while run:
-
-
-
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run= False
@@ -281,9 +249,6 @@ while run:
             check()
             arrowf()
     mx1,my1=pygame.mouse.get_pos()
-
-
-
     drawnumber()
     pygame.display.update()
 
