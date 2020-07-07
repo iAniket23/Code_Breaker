@@ -8,16 +8,16 @@ pygame.display.set_caption("Code Breaker")
 screen.fill((255,255,255))
 
 
-num = [pygame.image.load('1.png'), pygame.image.load('2.png'), pygame.image.load('3.png'), pygame.image.load('4.png'), pygame.image.load('5.png'), pygame.image.load('6.png'), pygame.image.load('7.png'), pygame.image.load('8.png'), pygame.image.load('9.png'), pygame.image.load('0.png')]
-arrow = pygame.image.load('arr.png')
-circ= pygame.image.load('cir.png')
-cros= pygame.image.load('cro.png')
-bg=pygame.image.load('bg1.png')
-bgsec=pygame.image.load('bgf.jpg')
+num = [pygame.image.load('Pictures\1.png'), pygame.image.load('Pictures\2.png'), pygame.image.load('Pictures\3.png'), pygame.image.load('Pictures\4.png'), pygame.image.load('Pictures\5.png'), pygame.image.load('Pictures\6.png'), pygame.image.load('Pictures\7.png'), pygame.image.load('Pictures\8.png'), pygame.image.load('Pictures\9.png'), pygame.image.load('Pictures\0.png')]
+arrow = pygame.image.load('Pictures\arr.png')
+circ= pygame.image.load('Pictures\cir.png')
+cros= pygame.image.load('Pictures\cro.png')
+bg=pygame.image.load('Pictures\bg1.png')
+bgsec=pygame.image.load('Pictures\bgf.jpg')
 
 
-prin=[pygame.image.load('win.jpg'), pygame.image.load('los.jpg'), pygame.image.load('click.jpg'), pygame.image.load('ru.png')]
-barr=pygame.image.load('bar.png')
+prin=[pygame.image.load('Pictures\win.jpg'), pygame.image.load('Pictures\los.jpg'), pygame.image.load('Pictures\click.jpg'), pygame.image.load('Pictures\ru.png')]
+barr=pygame.image.load('Pictures\bar.png')
 
 music = pygame.mixer.music.load('music.mp3')
 pygame.mixer.music.play(-1)
